@@ -59,3 +59,13 @@ func (t *DefaultTemplate) Format(ctx context.Context, _ ...Option) (result []*sc
 
 	return result, nil
 }
+
+// GetType returns the type of the fim template (Default).
+func (t *DefaultTemplate) GetType() string {
+	return "Default"
+}
+
+// IsCallbacksEnabled checks if the callbacks are enabled for the fim template.
+func (t *DefaultTemplate) IsCallbacksEnabled() bool {
+	return true
+}
